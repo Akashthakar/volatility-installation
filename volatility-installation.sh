@@ -94,7 +94,7 @@ python2 vol.py
 
 
 if [ "$volatility_found" = true ]; then
-    echo -e "\033[32mVolatility is already installed at $dir_path you should be able to run it without errors\033[0m"
+    echo -e "\033[32mVolatility is already installed at $dir_path and you should be able to run it without errors.\033[0m"
 
 else
     echo -e "\033[32mVolatility is installed at /opt/volatility\033[0m"
