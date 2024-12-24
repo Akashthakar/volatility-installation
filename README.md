@@ -22,20 +22,20 @@ To use this script, follow these steps:
 ### 1. Clone the Repository
 
 Clone this repository to your local machine using Git:
-<pre>git clone https://github.com/your-username/volatility-setup.git
-cd volatility-setup</pre>
+<pre>git clone https://github.com/your-username/volatility-installation.git
+cd volatility-installation</pre>
 
 ### 2. Make the Script Executable
 
 Change the permissions of the script to make it executable:
 
-<pre> chmod +x volatility-setup.sh </pre>
+<pre> chmod +x volatility-installation.sh </pre>
 
 ### 3. Run the Script
 
 Run the script to automatically check and install Volatility and its dependencies:
 <pre>
-sudo ./volatility-setup.sh
+sudo ./volatility-installation.sh
 </pre>
 **The script will:**
 
