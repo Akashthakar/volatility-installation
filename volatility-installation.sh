@@ -1,6 +1,7 @@
 #!/bin/bash
 
 search_dir=/
+volatility_found=false
 
 # Search for vol.py and suppress output with -q, storing the first result in file_path
 file_path=$(grep -rl "vol.py" "$search_dir" --include="*.py" | head -n 1)
@@ -13,7 +14,7 @@ if [ -n "$file_path" ];
                 echo -e "\033[32mFound vol.py at: $file_path\033[0m"
                 cd $dir_path
                 python2 vol.py
-
+                volatility_found=true
 
 
         else
@@ -25,7 +26,7 @@ if [ -n "$file_path" ];
 
                         git clone  https://github.com/volatilityfoundation/volatility.git
 
-                        echo -e "\033[32mvolatility is available at /opt directory\033[0m"
+                        echo -e "\033[32mvolatility is cloned at /opt directory\033[0m"
 
                         cd volatility
 
@@ -90,3 +91,11 @@ fi
 
 
 python2 vol.py
+
+
+if [ "$volatility_found" = true ]; then
+    echo -e "\033[32mVolatility is already installed at $dir_path\033[0m"
+
+else
+    echo -e "\033[32mVolatility is installed at /opt/volatility\033[0m"
+fi
