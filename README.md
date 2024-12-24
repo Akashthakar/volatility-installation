@@ -59,3 +59,13 @@ If everything is set up correctly, it should show the Volatility help message.
 - **Search Directory**: You can modify the search_dir variable in the script to specify where you want the script to search for vol.py.
 - **Dependencies**: If you want to add or remove dependencies, you can edit the dependency-checking section of the script.
 
+## Dependencies
+
+The script checks and installs the following dependencies if they are not already installed:
+
+- pip2 (Python 2.7 package manager)
+- setuptools (Python package for easy installation of other packages)
+- python2-dev (Python development files for building C extensions)
+- pycrypto (Python library for cryptography)
+- distorm3==3.4.4 (Python disassembler)
+- Pillow (Python Imaging Library, forked for Python 2)
