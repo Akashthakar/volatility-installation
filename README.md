@@ -22,7 +22,7 @@ To use this script, follow these steps:
 ### 1. Clone the Repository
 
 Clone this repository to your local machine using Git:
-<pre>git clone https://github.com/your-username/volatility-installation.git
+<pre>git clone https://github.com/Akashthakar/volatility-installation.git
 cd volatility-installation</pre>
 
 ### 2. Make the Script Executable
