@@ -37,7 +37,7 @@ If you are getting below error to install yara, this script can be helpful
 *** ERROR   : volatility.debug    : Please install Yara from https://plusvic.github.io/yara/
 </pre>
 
-It indicates that your environment is missing the required dependencies pycrypto (for Crypto.Hash) and distorm3. To resolve these errors, you can use the provided installation script to automatically install the necessary modules and run it without errors.
+It indicates that your environment is missing the required dependencies pycrypto (for Crypto.Hash) distorm3 and yara. To resolve these errors, you can use the provided installation script to automatically install the necessary modules and run it without errors.
   
 ## Features
 
