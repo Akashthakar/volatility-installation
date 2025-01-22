@@ -30,10 +30,10 @@ Volatility Foundation Volatility Framework 2.6.1
 *** Failed to import volatility.plugins.registry.registryapi (ImportError: No module named Crypto.Hash)
 *** Failed to import volatility.plugins.mac.apihooks (ImportError: No module named distorm3)
 *** Failed to import volatility.plugins.envars (ImportError: No module named Crypto.Hash)
+</pre>
 
-
-or 
-
+If you are getting below error to install yara, this script can be helpful
+<pre>
 *** ERROR   : volatility.debug    : Please install Yara from https://plusvic.github.io/yara/
 </pre>
 
