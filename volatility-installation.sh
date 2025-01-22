@@ -68,6 +68,13 @@ else
     echo -e "\033[35mPillow not found. Installing Pillow...\033[0m"
     pip2 install Pillow
 fi
+# Check if Yara is installed
+if dpkg -l | grep -q python2-yara; then
+    echo -e "\033[35mYara is already installed.\033[0m"
+else
+    echo -e "\033[35mYara not found. Installing YARA...\033[0m"
+    pip2 install yara-python==3.7.0
+fi
 python2 vol.py
 if [ "$volatility_found" = true ]; then
     echo -e "\033[32mVolatility is already installed at $dir_path and you should be able to run it without errors.\033[0m"
