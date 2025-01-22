@@ -30,6 +30,11 @@ Volatility Foundation Volatility Framework 2.6.1
 *** Failed to import volatility.plugins.registry.registryapi (ImportError: No module named Crypto.Hash)
 *** Failed to import volatility.plugins.mac.apihooks (ImportError: No module named distorm3)
 *** Failed to import volatility.plugins.envars (ImportError: No module named Crypto.Hash)
+
+
+or 
+
+*** ERROR   : volatility.debug    : Please install Yara from https://plusvic.github.io/yara/
 </pre>
 
 It indicates that your environment is missing the required dependencies pycrypto (for Crypto.Hash) and distorm3. To resolve these errors, you can use the provided installation script to automatically install the necessary modules and run it without errors.
@@ -101,3 +106,4 @@ The script checks and installs the following dependencies if they are not alread
 - pycrypto (Python library for cryptography)
 - distorm3==3.4.4 (Python disassembler)
 - Pillow (Python Imaging Library, forked for Python 2)
+- YARA=3.7.0 (Yara version compatible with volatility 2.6.1) 
