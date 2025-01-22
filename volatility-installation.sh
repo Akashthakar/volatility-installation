@@ -31,8 +31,12 @@ python_package_installed() {
     python2 -c "import $1" 2>/dev/null
 }
 # Check if pip2 is installed
+if which pip2 >/dev/null 2>&1; then
+        echo -e "\033[35mpip2 is already install\033[0m"
+else echo -e "\033[35mpip2 not found. Installing pip2...\033[0m"
     curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
     python2 get-pip.py
+fi
 # Check if setuptools is installed for pip2
 if pip2 show setuptools >/dev/null 2>&1; then
     echo -e "\033[35msetuptools is already installed\033[0m"
