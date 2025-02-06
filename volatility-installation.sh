@@ -40,7 +40,6 @@ fi
 # Install pip2
     curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
     python2 get-pip.py
-fi
 # Check if setuptools is installed for pip2
 if pip2 show setuptools >/dev/null 2>&1; then
     echo -e "\033[35msetuptools is already installed\033[0m"
