@@ -37,10 +37,7 @@ if apt-cache show python2-dev > /dev/null 2>&1; then
 else
     echo "python2-dev is not available."
 fi
-# Check if pip2 is installed
-if which pip2 >/dev/null 2>&1; then
-        echo -e "\033[35mpip2 is already install\033[0m"
-else echo -e "\033[35mpip2 not found. Installing pip2...\033[0m"
+# Install pip2
     curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
     python2 get-pip.py
 fi
