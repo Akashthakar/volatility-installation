@@ -30,6 +30,13 @@ command_exists() {
 python_package_installed() {
     python2 -c "import $1" 2>/dev/null
 }
+# Check if python2-dev package is available
+if apt-cache show python2-dev > /dev/null 2>&1; then
+    echo -e  "\033[35mpython2-dev is available. Installing...\033[0m"
+    sudo apt-get install -y python2-dev
+else
+    echo "python2-dev is not available."
+fi
 # Check if pip2 is installed
 if which pip2 >/dev/null 2>&1; then
         echo -e "\033[35mpip2 is already install\033[0m"
