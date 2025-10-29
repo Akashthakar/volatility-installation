@@ -2,6 +2,10 @@
 
 This is an automated Bash script designed to help users install and configure **Volatility**, a popular memory forensics tool, on their Linux systems. The script checks for existing installations of Volatility and its dependencies, and if not found, it will download and install Volatility, along with the necessary Python 2.7 packages.
 
+# Download the latest release script
+To download the latest release which supports installation of both volatility2 and volatility3 use the following command:
+
+<pre> wget https://github.com/Akashthakar/volatility-installation/releases/download/volatility-installtion/volatility-installation.sh </pre>
 ##  Error you might encounter during running volatility 2.6.1
 
 - If you encounter the following errors during the execution of Volatility Framework 2.6.1:
