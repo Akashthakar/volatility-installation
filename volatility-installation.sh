@@ -38,6 +38,7 @@ else
     echo "python2-dev is not available."
 fi
 # Install pip2
+        apt update
     curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
     python2 get-pip.py
 # Check if setuptools is installed for pip2
